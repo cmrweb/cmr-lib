@@ -5,7 +5,7 @@ function secureApi($token)
   $ip = $_SERVER['REMOTE_ADDR'];
   $date = date('Y-m-d H:i:s');
   $api = new cmrweb\API;
-  if (preg_match("/$server/", "www.espoirsoan.org")) {
+  if (preg_match("/$server/", "localhost")) {
     $api->setData([
       "server" => $server,
       "ip" => $ip,
@@ -28,12 +28,12 @@ function securityCheck($url)
   $ip = $_SERVER['REMOTE_ADDR'];
   $api = new cmrweb\API("valid=1 AND ip='$ip' AND token='$url'");
   if ($api->getData()) {
-    var_dump($api->getData());
-    return true;
-  } else {
     return false;
+  } else {
+    return true;
   }
 }
+
 
 function jsheader($path)
 {
