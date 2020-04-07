@@ -1,0 +1,19 @@
+{
+    "name": "cmrweb/cmrlib",
+    "description": "lib php js css",
+    "type": "library",
+    "require": {
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "cmrweb\\":"lib/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cmrwebdev",
+            "email": "33638879+cmrweb@users.noreply.github.com"
+        }
+    ]
+}
