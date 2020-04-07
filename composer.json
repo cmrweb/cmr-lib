@@ -1,7 +1,14 @@
 {
-    "name": "cmrweb/cmrlib",
+    "name": "cmrweb/cmr-lib",
     "description": "lib php js css",
     "type": "library",
+    "version": "v1.0",
+    "authors": [
+        {
+            "name": "cmrwebdev",
+            "email": "33638879+cmrweb@users.noreply.github.com"
+        }
+    ],
     "require": {
         "vlucas/phpdotenv": "^4.1"
     },
@@ -10,10 +17,5 @@
             "cmrweb\\":"lib/"
         }
     },
-    "authors": [
-        {
-            "name": "cmrwebdev",
-            "email": "33638879+cmrweb@users.noreply.github.com"
-        }
-    ]
+    "license": "MIT"
 }
